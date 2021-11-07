@@ -11,12 +11,10 @@ fun getData():Data
 fun main()
 {
     val data = getData()
-
     when(data)
     {
         is Data.Success -> print(data)
         is Data.Error -> print(data)
         is Data.loading -> print(data)
     }
-
 }
